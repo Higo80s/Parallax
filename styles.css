@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: black;
+}
+
+.parallax {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.parallax-inner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: brightness(0.7);
+}
+
+#layer1 {
+        background-image: url('https://i.pinimg.com/originals/ca/2d/80/ca2d80ec966639c2ea9a0385367f51e7.jpg');
+        z-index: -1;
+        animation: parallax1 10s linear infinite;
+}
+
+#layer2 {
+    background-image: url('https://1.bp.blogspot.com/-piptOnSer6c/W75sacBB0lI/AAAAAAACv2g/rgLU5JE9yZweSkFeXpRyZMxFqAbocpYAQCLcBGAs/s1600/IMG_2400_1.jpg');
+    z-index: -2;
+    animation: parallax2 10s linear infinite;
+}
+
+#layer3 {
+    background-image: url('https://wallpapercave.com/wp/wp8041417.jpg');
+    z-index: -3;
+    animation: parallax3 10s linear infinite;
+}
+
+.content {
+    text-align: center; /* Centraliza o conteúdo horizontalmente */
+    position: absolute;
+    top: 50%; /* Define a partir do topo a posição vertical */
+    left: 50%; /* Define a partir da esquerda a posição horizontal */
+    transform: translate(-50%, -50%);
+    color: white;
+    padding: 100px 0;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+p {
+    font-size: 18px;
+}
+
+@keyframes parallax1 {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: -900px; /* Ajuste o valor conforme necessário para controlar a velocidade do efeito */
+    }
+}
+
+@keyframes parallax2 {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: -450px; /* Ajuste o valor conforme necessário para controlar a velocidade do efeito */
+    }
+}
+
+@keyframes parallax3 {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: -80px; /* Ajuste o valor conforme necessário para controlar a velocidade do efeito */
+    }
+}
